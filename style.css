@@ -1,0 +1,823 @@
+/**
+ * Theme Name: Solidus
+ * Theme URI: https://github.com/lsquo/solidus
+ * Description: Solidus is a theme for blogging.
+ * Version: 1.0.0
+ * Author: Lsquo
+ * Author URI: https://lsquo.com
+ * Text Domain: solidus
+ * Tags: two-columns, four-columns, left-sidebar, accessibility-ready, custom-logo, featured-images, footer-widgets, rtl-language-support, sticky-post, threaded-comments, translation-ready, blog
+ * License: GPLv2 or later
+ * License URI: http://www.gnu.org/licenses/gpl-2.0.txt
+ */
+
+* {
+	box-sizing: border-box;
+	margin: 0;
+	padding: 0;
+}
+
+:focus {
+	outline: 0.1rem dashed #4d90fe;
+}
+
+html {}
+
+body {
+	font-family: 'Noto Serif', serif;
+	font-size: 1.2rem;
+	line-height: 1.8;
+	overflow-wrap: break-word;
+	padding: 2rem;
+	word-wrap: break-word;
+}
+
+header {}
+
+footer {
+	border-top: 0.1rem dashed #555;
+	padding-top: 2rem;
+}
+
+article {}
+
+section {}
+
+nav {
+	margin: 0 0 2rem 0;
+}
+
+aside {}
+
+div {}
+
+span {}
+
+br {
+	line-height: 1;
+}
+
+hr {
+	margin: 0 0 2rem 0;
+}
+
+h1 {
+	clear: both;
+	font-family: 'Boogaloo', cursive;
+	font-size: 2.2rem;
+	font-weight: 400;
+	line-height: 1;
+	margin: 0 0 2rem 0;
+}
+
+h2 {
+	clear: both;
+	font-family: 'Boogaloo', cursive;
+	font-size: 2rem;
+	font-weight: 400;
+	line-height: 1;
+	margin: 0 0 2rem 0;
+}
+
+h3 {
+	clear: both;
+	font-family: 'Boogaloo', cursive;
+	font-size: 1.8rem;
+	font-weight: 400;
+	line-height: 1;
+	margin: 0 0 2rem 0;
+}
+
+h4 {
+	clear: both;
+	font-family: 'Boogaloo', cursive;
+	font-size: 1.6rem;
+	font-weight: 400;
+	line-height: 1;
+	margin: 0 0 2rem 0;
+}
+
+h5 {
+	clear: both;
+	font-family: 'Boogaloo', cursive;
+	font-size: 1.4rem;
+	font-weight: 400;
+	line-height: 1;
+	margin: 0 0 2rem 0;
+}
+
+h6 {
+	clear: both;
+	font-family: 'Boogaloo', cursive;
+	font-size: 1.2rem;
+	font-weight: 400;
+	line-height: 1;
+	margin: 0 0 2rem 0;
+}
+
+p {
+	margin: 0 0 2rem 0;
+}
+
+a {}
+
+a:link {
+	color: #0000ee;
+	text-decoration: underline;
+}
+
+a:visited {
+	color: #551a8b;
+	text-decoration: underline;
+}
+
+address {
+	font-style: normal;
+	margin: 0 0 2rem 0;
+}
+
+ol {
+	padding: 0 0 0 3rem;
+	margin: 0 0 2rem 0;
+}
+
+ul {
+	list-style: square;
+	padding: 0 0 0 3rem;
+	margin: 0 0 2rem 0;
+}
+
+li {}
+
+dl {}
+
+dt {
+	text-decoration: underline;
+}
+
+dd {
+	margin: 0 0 2rem 0;
+}
+
+blockquote {
+	font-style: italic;
+	margin: 0 0 2rem 0;
+	padding: 0 2rem 0 2rem;
+	quotes: none;
+}
+
+blockquote::before {
+	content: none;
+}
+
+blockquote::after {
+	content: none;
+}
+
+q {}
+
+cite {
+	font-style: italic;
+}
+
+em {
+	font-style: italic;
+}
+
+strong {
+	font-weight: bold;
+}
+
+small {
+	font-size: 90%;
+}
+
+s {
+	text-decoration: line-through;
+}
+
+ins {
+	text-decoration: underline;
+}
+
+del {
+	text-decoration: line-through;
+}
+
+mark {
+	background-color: #ffff00;
+}
+
+sub {
+	vertical-align: sub;
+}
+
+sup {
+	vertical-align: super;
+}
+
+i {
+	font-style: italic;
+}
+
+b {
+	font-weight: bold;
+}
+
+u {
+	text-decoration: underline;
+}
+
+dfn {
+	font-style: italic;
+}
+
+abbr {
+	font-variant: none;
+	text-decoration: dotted underline;
+}
+
+time {}
+
+pre {
+	background-color: #fafafa;
+	border: 0.1rem dashed #555;
+	font-family: 'Source Code Pro', monospace;
+	font-size: 80%;
+	margin: 0 0 2rem 0;
+	padding: 1rem 1.8rem;
+	white-space: pre-wrap;
+}
+
+code {
+	font-family: 'Source Code Pro', monospace;
+}
+
+samp {
+	font-family: 'Source Code Pro', monospace;
+}
+
+kbd {
+	font-family: 'Source Code Pro', monospace;
+}
+
+var {
+	font-style: italic;
+}
+
+figure {
+	margin: 0 0 2rem 0;
+}
+
+figcaption {
+	font-size: 1rem;
+	margin: 0 0 1rem 0;
+}
+
+img {
+	border-style: none;
+	display: block;
+	height: auto;
+	margin: 0 0 2rem 0;
+	max-width: 100%;
+}
+
+iframe {
+	margin: 0 0 2rem 0;
+	max-width: 100%;
+}
+
+embed {
+	margin: 0 0 2rem 0;
+	max-width: 100%;
+}
+
+object {
+	margin: 0 0 2rem 0;
+	max-width: 100%;
+}
+
+video {
+	margin: 0 0 2rem 0;
+	max-width: 100%;
+}
+
+audio {
+	margin: 0 0 2rem 0;
+	max-width: 100%;
+}
+
+canvas {
+	margin: 0 0 2rem 0;
+	max-width: 100%;
+}
+
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+	margin: 0 0 2rem 0;
+}
+
+caption {
+	font-size: 1rem;
+	margin: 0 0 1rem 0;
+	text-align: left;
+}
+
+colgroup {}
+
+col {}
+
+tbody {}
+
+thead {}
+
+tfoot {}
+
+tr {}
+
+td {
+	border-color: #555;
+	border-style: dashed;
+	border-width: 0.1rem;
+	padding: 0.2rem 1rem;
+	text-align: left;
+}
+
+th {
+	background-color: #eee;
+	border-color: #555;
+	border-style: dashed;
+	border-width: 0.1rem;
+	font-weight: 400;
+	padding: 0.2rem 1rem;
+	text-align: left;
+}
+
+form {}
+
+fieldset {
+	border-color: #555;
+	border-style: dashed;
+	border-width: 0.1rem;
+	margin: 0 0 2rem 0;
+	padding: 2rem 2rem 0 2rem;
+}
+
+legend {}
+
+label {
+	display: block;
+	margin: 0 0 1rem 0;
+}
+
+input {
+	border-color: #555;
+	border-style: dashed;
+	border-width: 0.1rem;
+	font-family: inherit;
+	font-size: inherit;
+	margin: 0 0 2rem 0;
+	padding: 0.5rem 1rem;
+	width: 100%;
+}
+
+input[type="button"] {
+	background-color: #eee;
+	cursor: pointer;
+	padding: 0.5rem 3rem;
+	width: auto;
+}
+
+input[type="checkbox"] {
+	margin: 0;
+	padding: 0;
+	width: auto;
+}
+
+input[type="color"] {
+	background-color: transparent;
+	height: 2.5rem;
+	padding: 0;
+	width: 2.5rem;
+}
+
+input[type="date"] {}
+
+input[type="datetime"] {}
+
+input[type="datetime-local"] {}
+
+input[type="email"] {}
+
+input[type="file"] {}
+
+input[type="hidden"] {}
+
+input[type="image"] {}
+
+input[type="month"] {}
+
+input[type="number"] {}
+
+input[type="password"] {}
+
+input[type="radio"] {
+	margin: 0;
+	padding: 0;
+	width: auto;
+}
+
+input[type="range"] {
+	border-style: none;
+	padding: 0;
+}
+
+input[type="reset"] {
+	background-color: #eee;
+	cursor: pointer;
+	padding: 0.5rem 3rem;
+	width: auto;
+}
+
+input[type="search"] {}
+
+input[type="submit"] {
+	background-color: #eee;
+	cursor: pointer;
+	padding: 0.5rem 3rem;
+	width: auto;
+}
+
+input[type="tel"] {}
+
+input[type="text"] {}
+
+input[type="time"] {}
+
+input[type="url"] {}
+
+input[type="week"] {}
+
+button {
+	background-color: #eee;
+	border-color: #555;
+	border-style: dashed;
+	border-width: 0.1rem;
+	cursor: pointer;
+	font-family: inherit;
+	font-size: inherit;
+	margin: 0 0 2rem 0;
+	padding: 0.5rem 3rem;
+}
+
+textarea {
+	border-color: #555;
+	border-style: dashed;
+	border-width: 0.1rem;
+	font-family: inherit;
+	font-size: inherit;
+	margin: 0 0 2rem 0;
+	padding: 1rem;
+	width: 100%;
+}
+
+select {
+	background-color: #fff;
+	border-color: #555;
+	border-style: dashed;
+	border-width: 0.1rem;
+	font-family: inherit;
+	font-size: inherit;
+	margin: 0 0 2rem 0;
+	padding: 0.5rem 1rem;
+	width: 100%;
+}
+
+optgroup {}
+
+option {}
+
+output {}
+
+progress {}
+
+meter {}
+
+details {}
+
+summary {}
+
+figure img {
+	margin: 0 0 1rem 0;
+}
+
+#brand {
+	margin: 0 auto 2rem auto;
+	max-width: 5.6rem;
+}
+
+.site-title {
+	clear: both;
+	font-family: 'Boogaloo', cursive;
+	font-size: 2.2rem;
+	font-weight: 400;
+	line-height: 1;
+	margin: 0 0 2rem 0;	
+}
+
+ul.menu {
+	list-style: none;
+	padding: 0;
+	text-align: center;
+}
+
+ul.menu li {
+	display: inline;
+	margin: 0 1rem;
+	white-space: nowrap;
+}
+
+.tagcloud {
+	margin: 0 0 2rem 0;
+}
+
+.post-list {
+	list-style-type: none;
+	padding: 0;
+}
+
+.post-list li {
+	margin: 0 0 2rem 0;
+}
+
+.post-list time {
+	display: block;
+}
+
+.comment-list {
+	list-style: none;
+	padding: 0;
+}
+
+.comment-list ul.children {
+	list-style: none;
+	padding: 0 0 0 1rem;
+}
+
+#comment {
+	margin: 0;
+}
+
+.sticky time {
+	color: #e60000;
+}
+
+.mejs-container {
+	margin: 0 0 2rem 0;
+}
+
+.current-menu-item a {
+	color: #000;
+}
+
+.sticky {}
+
+.wp-caption {}
+
+.wp-caption-text {}
+
+.screen-reader-text {
+	clip: rect(0.1rem, 0.1rem, 0.1rem, 0.1rem);
+	height: 0.1rem;
+	overflow: hidden;
+	position: absolute;
+	width: 0.1rem;
+}
+
+.screen-reader-text:focus {
+	clip: auto;
+	height: auto;
+	overflow: visible;
+	position: static;
+	width: auto;
+}
+
+.gallery-caption {}
+
+.bypostauthor {}
+
+.aligncenter {
+	display: block;
+	margin-left: auto;
+	margin-right: auto;
+}
+
+.alignleft {
+	float: left;
+	margin: 0 2rem 2rem 0;
+}
+
+.alignright {
+	float: right;
+	margin: 0 0 2rem 2rem;
+}
+
+.gallery {
+	margin: 0 0 2rem 0;
+}
+
+.gallery-item {
+	display: inline-block;
+	margin: 0;
+	text-align: center;
+	vertical-align: top;
+	width: 100%;
+}
+
+.gallery-columns-2 .gallery-item {
+	max-width: 50%;
+}
+
+.gallery-columns-3 .gallery-item {
+	max-width: 33.33%;
+}
+
+.gallery-columns-4 .gallery-item {
+	max-width: 25%;
+}
+
+.gallery-columns-5 .gallery-item {
+	max-width: 20%;
+}
+
+.gallery-columns-6 .gallery-item {
+	max-width: 16.66%;
+}
+
+.gallery-columns-7 .gallery-item {
+	max-width: 14.28%;
+}
+
+.gallery-columns-8 .gallery-item {
+	max-width: 12.5%;
+}
+
+.gallery-columns-9 .gallery-item {
+	max-width: 11.11%;
+}
+
+.gallery-item img {
+	margin: 0 auto 1rem auto;
+}
+
+.row {
+	position: relative;
+	width: 100%;
+}
+
+.row [class^="col"] {
+	min-height: 0.125rem;
+}
+
+.col-1,
+.col-2,
+.col-3,
+.col-4,
+.col-5,
+.col-6,
+.col-7,
+.col-8,
+.col-9,
+.col-10,
+.col-11,
+.col-12 {
+	width: 100%;
+}
+
+.col-1-sm {
+	width: 4.33%;
+}
+
+.col-2-sm {
+	width: 12.66%;
+}
+
+.col-3-sm {
+	width: 21%;
+}
+
+.col-4-sm {
+	width: 29.33%;
+}
+
+.col-5-sm {
+	width: 37.66%;
+}
+
+.col-6-sm {
+	width: 46%;
+}
+
+.col-7-sm {
+	width: 54.33%;
+}
+
+.col-8-sm {
+	width: 62.66%;
+}
+
+.col-9-sm {
+	width: 71%;
+}
+
+.col-10-sm {
+	width: 79.33%;
+}
+
+.col-11-sm {
+	width: 87.66%;
+}
+
+.col-12-sm {
+	width: 96%;
+}
+
+.row::after {
+	clear: both;
+	content: "";
+	display: table;
+}
+
+.hidden-sm {
+	display: none;
+}
+
+@media only screen and (min-width: 45em) {
+	.comment-list ul.children {
+		padding: 0 0 0 2rem;
+	}
+
+	.row [class^="col"] {
+		float: left;
+		margin: 0 2%;
+	}
+
+	.col-1 {
+		width: 4.33%;
+	}
+	
+	.col-2 {
+		width: 12.66%;
+	}
+	
+	.col-3 {
+		width: 21%;
+	}
+	
+	.col-4 {
+		width: 29.33%;
+	}
+	
+	.col-5 {
+		width: 37.66%;
+	}
+	
+	.col-6 {
+		width: 46%;
+	}
+	
+	.col-7 {
+		width: 54.33%;
+	}
+	
+	.col-8 {
+		width: 62.66%;
+	}
+	
+	.col-9 {
+		width: 71%;
+	}
+	
+	.col-10 {
+		width: 79.33%;
+	}
+	
+	.col-11 {
+		width: 87.66%;
+	}
+	
+	.col-12 {
+		width: 96%;
+	}
+	
+	.hidden-sm {
+		display: block;
+	}
+}
+
+@media only screen and (min-width: 76em) {
+	blockquote {
+		padding: 0 6rem;
+	}
+}
