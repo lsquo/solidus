@@ -18,8 +18,8 @@ get_header(); ?>
 		<?php } else { ?>
 			<p class="site-title"><?php echo esc_html( get_bloginfo( 'description' ) ); ?></p>
 		<?php }
-		if ( is_active_sidebar( 'header' ) ) {
-			dynamic_sidebar( 'header' );
+		if ( is_active_sidebar( 'search' ) ) {
+			dynamic_sidebar( 'search' );
 		} ?>
 	</header>
 </div>

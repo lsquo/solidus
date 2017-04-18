@@ -9,8 +9,73 @@
 add_action( 'widgets_init', function() {
 	register_sidebar(
 		array(
-			'name'          => __( 'Header', 'solidus' ),
-			'id'            => 'header',
+			'name'          => __( 'Home', 'solidus' ),
+			'id'            => 'home',
+			'before_widget' => '',
+			'after_widget'  => '',
+			'before_title'  => '<h2>',
+			'after_title'   => '</h2>'
+		)
+	);
+} );
+
+add_action( 'widgets_init', function() {
+	register_sidebar(
+		array(
+			'name'          => __( 'Post', 'solidus' ),
+			'id'            => 'post',
+			'before_widget' => '',
+			'after_widget'  => '',
+			'before_title'  => '<h2>',
+			'after_title'   => '</h2>'
+		)
+	);
+} );
+
+add_action( 'widgets_init', function() {
+	register_sidebar(
+		array(
+			'name'          => __( 'Page', 'solidus' ),
+			'id'            => 'page',
+			'before_widget' => '',
+			'after_widget'  => '',
+			'before_title'  => '<h2>',
+			'after_title'   => '</h2>'
+		)
+	);
+} );
+
+add_action( 'widgets_init', function() {
+	register_sidebar(
+		array(
+			'name'          => __( 'Search', 'solidus' ),
+			'id'            => 'search',
+			'before_widget' => '',
+			'after_widget'  => '',
+			'before_title'  => '<h2>',
+			'after_title'   => '</h2>'
+		)
+	);
+} );
+
+add_action( 'widgets_init', function() {
+	register_sidebar(
+		array(
+			'name'          => __( 'Archive', 'solidus' ),
+			'id'            => 'archive',
+			'before_widget' => '',
+			'after_widget'  => '',
+			'before_title'  => '<h2>',
+			'after_title'   => '</h2>'
+		)
+	);
+} );
+
+add_action( 'widgets_init', function() {
+	register_sidebar(
+		array(
+			'name'          => __( '404', 'solidus' ),
+			'id'            => '404',
 			'before_widget' => '',
 			'after_widget'  => '',
 			'before_title'  => '<h2>',
