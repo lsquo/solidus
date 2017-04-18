@@ -512,9 +512,10 @@ figure img {
 	margin: 0 0 1rem 0;
 }
 
-#brand {
+main img:first-of-type {
 	margin: 0 auto 2rem auto;
-	max-width: 5.6rem;
+	height: 8rem;
+	width: auto;
 }
 
 .site-title {
@@ -702,6 +703,10 @@ ul.menu li {
 }
 
 @media only screen and (min-width: 45em) {
+	main img:first-of-type {
+		height: auto;
+	}
+
 	.comment-list ul.children {
 		padding: 0 0 0 2rem;
 	}
