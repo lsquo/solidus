@@ -8,16 +8,12 @@
 
 get_header(); ?>
 <div class="col-3">
-	<?php if ( function_exists( 'the_custom_logo' ) ) {
-		the_custom_logo();
-	} ?>
 	<header>
-		<?php if ( is_front_page() ) { ?>
-			<h1><?php echo esc_html( get_bloginfo( 'description' ) ); ?></h1>
-		<?php } else { ?>
-			<p class="site-title"><?php echo esc_html( get_bloginfo( 'description' ) ); ?></p>
-		<?php }
-		if ( is_active_sidebar( 'home' ) ) {
+		<?php if ( function_exists( 'the_custom_logo' ) ) {
+			the_custom_logo();
+		} ?>
+		<h1><?php echo esc_html( get_bloginfo( 'description' ) ); ?></h1>
+		<?php if ( is_active_sidebar( 'home' ) ) {
 			dynamic_sidebar( 'home' );
 		} ?>
 	</header>
