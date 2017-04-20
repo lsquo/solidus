@@ -33,7 +33,7 @@ get_header(); ?>
 				);
 				$posts = get_posts( array(
 					'category'       => $category->term_id,
-					'posts_per_page' => 6
+					'posts_per_page' => 3
 				) ); ?>
 				<ul class="post-list">
 					<?php foreach ( $posts as $post ) {
