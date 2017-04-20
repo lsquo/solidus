@@ -36,7 +36,7 @@ get_header(); ?>
 			if ( has_tag() ) { ?>
 				<p><?php esc_html_e( 'Tagged', 'solidus' ); ?> <?php echo get_the_tag_list( '', ', ', '' ); ?></p>
 			<?php } ?>
-			<address><?php printf(
+			<p><?php printf(
 				esc_html__( 'Posted by %1$s on %2$s.', 'solidus' ),
 				get_the_author_posts_link(),
 				sprintf(
@@ -44,7 +44,7 @@ get_header(); ?>
 					esc_attr( get_the_date( 'c' ) ),
 					esc_html( get_the_date() )
 				)
-			); ?></address>
+			); ?></p>
 			<?php if ( comments_open() || get_comments_number() ) {
 				comments_template();
 			} ?>
