@@ -8,14 +8,12 @@
 
 get_header(); ?>
 <div class="col-3">
-	<header>
-		<?php if ( function_exists( 'the_custom_logo' ) ) {
-			the_custom_logo();
-		}
-		if ( is_active_sidebar( 'page' ) ) {
-			dynamic_sidebar( 'page' );
-		} ?>
-	</header>
+	<?php if ( function_exists( 'the_custom_logo' ) ) {
+		the_custom_logo();
+	}
+	if ( is_active_sidebar( 'page' ) ) {
+		dynamic_sidebar( 'page' );
+	} ?>
 </div>
 <div class="col-9">
 	<?php while ( have_posts() ) : the_post(); ?>

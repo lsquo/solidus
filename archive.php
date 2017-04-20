@@ -8,14 +8,12 @@
 
 get_header(); ?>
 <div class="col-3">
-	<header>
-		<?php if ( function_exists( 'the_custom_logo' ) ) {
-			the_custom_logo();
-		}
-		if ( is_active_sidebar( 'archive' ) ) {
-			dynamic_sidebar( 'archive' );
-		} ?>
-	</header>
+	<?php if ( function_exists( 'the_custom_logo' ) ) {
+		the_custom_logo();
+	}
+	if ( is_active_sidebar( 'archive' ) ) {
+		dynamic_sidebar( 'archive' );
+	} ?>
 </div>
 <div class="col-9">
 	<?php the_archive_title( '<header><h1>', '</h1></header>' );

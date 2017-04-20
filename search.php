@@ -9,14 +9,12 @@
 get_header(); ?>
 <?php global $wp_query; ?>
 <div class="col-3">
-	<header>
-		<?php if ( function_exists( 'the_custom_logo' ) ) {
-			the_custom_logo();
-		}
-		if ( is_active_sidebar( 'search' ) ) {
-			dynamic_sidebar( 'search' );
-		} ?>
-	</header>
+	<?php if ( function_exists( 'the_custom_logo' ) ) {
+		the_custom_logo();
+	}
+	if ( is_active_sidebar( 'search' ) ) {
+		dynamic_sidebar( 'search' );
+	} ?>
 </div>
 <div class="col-9">
 	<header>

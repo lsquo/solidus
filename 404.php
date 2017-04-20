@@ -8,14 +8,12 @@
 
 get_header(); ?>
 <div class="col-3">
-	<header>
-		<?php if ( function_exists( 'the_custom_logo' ) ) {
-			the_custom_logo();
-		}
-		if ( is_active_sidebar( '404' ) ) {
-			dynamic_sidebar( '404' );
-		} ?>
-	</header>
+	<?php if ( function_exists( 'the_custom_logo' ) ) {
+		the_custom_logo();
+	}
+	if ( is_active_sidebar( '404' ) ) {
+		dynamic_sidebar( '404' );
+	} ?>
 </div>
 <div class="col-9">
 	<header>
