@@ -9,18 +9,17 @@
 if ( post_password_required() ) {
 	return;
 } ?>
-<h2 id="comments"><?php esc_html_e( 'Comments', 'solidus' ); ?></h2>
-<p><?php printf(
+<h2 id="comments"><?php printf(
 	esc_html(
 		_n(
-			'%1$s comment so far.',
-			'%1$s comments so far.',
+			'%1$s comment',
+			'%1$s comments',
 			get_comments_number(),
 			'solidus'
 		)
 	),
 	number_format_i18n( get_comments_number() )
-); ?></p>
+); ?></h2>
 <?php if ( have_comments() ) { ?>
 	<ul class="comment-list">
 		<?php wp_list_comments(
