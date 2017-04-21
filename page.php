@@ -14,9 +14,11 @@ get_header(); ?>
 				the_custom_logo();
 			} ?>
 		</header>
-		<?php if ( is_active_sidebar( 'page' ) ) {
-			dynamic_sidebar( 'page' );
-		} ?>
+		<aside>
+			<?php if ( is_active_sidebar( 'page' ) ) {
+				dynamic_sidebar( 'page' );
+			} ?>
+		</aside>
 	</div>
 	<div class="col-9">
 		<main>

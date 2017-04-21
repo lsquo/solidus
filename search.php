@@ -15,9 +15,11 @@ get_header(); ?>
 				the_custom_logo();
 			} ?>
 		</header>
-		<?php if ( is_active_sidebar( 'search' ) ) {
-			dynamic_sidebar( 'search' );
-		} ?>
+		<aside>
+			<?php if ( is_active_sidebar( 'search' ) ) {
+				dynamic_sidebar( 'search' );
+			} ?>
+		</aside>
 	</div>
 	<div class="col-9">
 		<main>
