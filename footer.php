@@ -5,7 +5,7 @@
  * @package Solidus
  * @subpackage Templates
  */
-?>
-		</main>
+
+		wp_footer(); ?>
 	</body>
 </html>
