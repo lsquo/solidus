@@ -9,13 +9,17 @@
 get_header(); ?>
 <div class="row">
 	<div class="col-3">
-		<?php if ( function_exists( 'the_custom_logo' ) ) {
-			the_custom_logo();
-		} ?>
-		<h1><?php echo esc_html( get_bloginfo( 'description' ) ); ?></h1>
-		<?php if ( is_active_sidebar( 'home' ) ) {
-			dynamic_sidebar( 'home' );
-		} ?>
+		<header>
+			<?php if ( function_exists( 'the_custom_logo' ) ) {
+				the_custom_logo();
+			} ?>
+			<h1><?php echo esc_html( get_bloginfo( 'description' ) ); ?></h1>
+		</header>
+		<aside>
+			<?php if ( is_active_sidebar( 'home' ) ) {
+				dynamic_sidebar( 'home' );
+			} ?>
+		</aside>
 	</div>
 	<div class="col-9">
 		<div class="row">
@@ -62,9 +66,11 @@ get_header(); ?>
 		</div>
 		<div class="row">
 			<div class="col-12">
-				<?php if ( is_active_sidebar( 'footer' ) ) {
-					dynamic_sidebar( 'footer' );
-				} ?>
+				<footer>
+					<?php if ( is_active_sidebar( 'footer' ) ) {
+						dynamic_sidebar( 'footer' );
+					} ?>
+				</footer>
 			</div>
 		</div>
 	</div>
