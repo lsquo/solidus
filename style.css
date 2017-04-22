@@ -512,7 +512,7 @@ figure img {
 	margin: 0 0 1rem 0;
 }
 
-main img:first-of-type {
+body img:first-of-type {
 	margin: 0 auto 2rem auto;
 	height: 8rem;
 	width: auto;
@@ -693,7 +693,7 @@ ul.menu li {
 }
 
 @media only screen and (min-width: 45em) {
-	main img:first-of-type {
+	body img:first-of-type {
 		height: auto;
 	}
 
