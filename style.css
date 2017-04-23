@@ -518,12 +518,12 @@ body img:first-of-type {
 	width: auto;
 }
 
-ul.menu {
+footer ul {
 	list-style: none;
 	padding: 0;
 }
 
-ul.menu li {
+footer ul li {
 	display: inline;
 	margin: 0 2rem 0 0;
 	white-space: nowrap;
