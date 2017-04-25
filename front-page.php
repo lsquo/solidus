@@ -13,8 +13,9 @@ get_header(); ?>
 			<?php if ( function_exists( 'the_custom_logo' ) ) {
 				the_custom_logo();
 			} ?>
-			<h1><?php echo esc_html( get_bloginfo( 'description' ) ); ?></h1>
+			<h1><?php echo esc_html( get_bloginfo( 'name' ) ); ?></h1>
 		</header>
+		<p><?php echo esc_html( get_bloginfo( 'description' ) ); ?></p>
 		<aside>
 			<?php if ( is_active_sidebar( 'home' ) ) {
 				dynamic_sidebar( 'home' );
