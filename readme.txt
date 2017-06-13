@@ -4,7 +4,7 @@ Donate link: https://www.thebrooke.org/get-involved/donate
 Tags: two-columns, four-columns, left-sidebar, accessibility-ready, custom-logo, featured-images, footer-widgets, rtl-language-support, sticky-post, threaded-comments, translation-ready, blog
 Requires at least: 3.8
 Tested up to: 4.7.3
-Stable tag: 1.0.0
+Stable tag: 1.1.0
 License: GPLv2 or later
 License URI: http://www.gnu.org/licenses/gpl-2.0.txt
 
@@ -28,6 +28,10 @@ You can then go ahead and activate the theme.
 If you think you've spotted a bug, please open an issue on [GitHub](https://github.com/lsquo/solidus/issues).
 
 == Changelog ==
+
+= 1.1.0 =
+* Add a home.php template
+* Fix HTML
 
 = 1.0.0 =
 * Initial release
